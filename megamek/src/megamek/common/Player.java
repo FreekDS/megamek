@@ -80,15 +80,22 @@ public final class Player extends TurnOrdered implements IPlayer {
     
     private double eloValue = 0.0;
 	
-    @Override
     public double getElo() {
         return eloValue;
     }
     
-    @Override
     public void setElo(double elo) {
         eloValue = elo; /* read from disk */
     }
+    
+    public void updateElo(boolean win) {
+       if (win) {
+            eloValue += 10.0; /* algorithm should be chosen by the company */
+       } else {
+            eloValue -= 10.0; /* algorithm should be chosen by the company */
+       }
+    }
+       
 	
     @Override
     public Vector<Minefield> getMinefields() {
