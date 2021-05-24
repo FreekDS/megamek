@@ -1555,4 +1555,6 @@ public interface IGame {
      * moving the cancelVictory function closer to the game
      */
     public abstract void cancelVictory();
+
+    public abstract void updatePlayersElo();
 }

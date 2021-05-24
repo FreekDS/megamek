@@ -22,7 +22,6 @@ import megamek.client.ui.swing.util.PlayerColour;
 import megamek.common.event.GamePlayerChangeEvent;
 import megamek.common.icons.Camouflage;
 import megamek.common.options.OptionsConstants;
-import megamek.server.Server
 
 /**
  * Represents a player in the game.

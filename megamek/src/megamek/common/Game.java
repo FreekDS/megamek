@@ -3690,4 +3690,8 @@ public class Game implements Serializable, IGame {
         setVictoryTeam(IPlayer.TEAM_NONE);
     }
 
+    @Override
+    public void updatePlayersElo() {
+
+    }
 }
