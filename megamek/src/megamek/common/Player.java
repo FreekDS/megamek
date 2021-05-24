@@ -76,7 +76,9 @@ public final class Player extends TurnOrdered implements IPlayer {
      * player's request to chang teams.
      */
     private boolean allowingTeamChange = false;
-
+    
+    private double eloValue = 0.0;
+	
     @Override
     public Vector<Minefield> getMinefields() {
         return visibleMinefields;
