@@ -10,4 +10,10 @@ import java.io.Serializable;
 
 public interface IElo extends Serializable {
     
+    void updateElo(boolean win);
+    
+    double getElo();
+    
+    void setElo(double elo);
+    
 }
