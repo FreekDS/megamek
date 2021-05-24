@@ -2993,6 +2993,7 @@ public class Server implements Runnable {
                 }
                 break;
             case PHASE_VICTORY:
+                game.updatePlayersElo();
                 GameVictoryEvent gve = new GameVictoryEvent(this, game);
                 game.processGameEvent(gve);
                 transmitGameVictoryEventToAll();

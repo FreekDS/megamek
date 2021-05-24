@@ -3692,6 +3692,11 @@ public class Game implements Serializable, IGame {
 
     @Override
     public void updatePlayersElo() {
-
+        Enumeration<IPlayer> players = getPlayers();
+        while(players.hasMoreElements()) {
+            IPlayer player = players.nextElement();
+            player.updateElo(player.getId() == getVictoryPlayerId());
+        }
     }
+
 }
