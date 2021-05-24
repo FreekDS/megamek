@@ -80,6 +80,11 @@ public final class Player extends TurnOrdered implements IPlayer {
     private double eloValue = 0.0;
 	
     @Override
+    public double getElo() {
+        return eloValue;
+    }
+	
+    @Override
     public Vector<Minefield> getMinefields() {
         return visibleMinefields;
     }
