@@ -25,7 +25,7 @@ import java.util.Vector;
  * Time: 10:17 AM
  * To change this template use File | Settings | File Templates.
  */
-public interface IPlayer extends ITurnOrdered {
+public interface IPlayer extends ITurnOrdered, IElo {
     int PLAYER_NONE = -1;
     int TEAM_NONE = 0;
     int TEAM_UNASSIGNED = -1;
